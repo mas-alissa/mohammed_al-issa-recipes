@@ -1,0 +1,417 @@
+/* Mobile Size  */
+@media (min-width: 320px) and (max-width: 767px) {
+  @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 100px 1fr 500px 1fr;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "main main main main"
+      "section section section section"
+      "footer footer footer footer";
+    height: 100vh;
+  }
+
+  .header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-image: url("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=768,574");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 30px 0;
+    height: 200px;
+  }
+  .title {
+    color: white;
+    text-shadow: 0 0 10px black;
+
+    font-weight: 700;
+    font-family: "Architects Daughter", cursive;
+  }
+  .nav {
+    grid-area: nav;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: black;
+  }
+
+  .section {
+    grid-area: section;
+    border-radius: 15px;
+    background-color: black;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cheesy-potato-casserole-comfort-food-recipes-1627578509.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section p {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+  }
+  .section ul {
+    list-style: none;
+    margin-top: 50px;
+  }
+  .section ul li {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+  }
+  .section ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .section ul li a:hover {
+    color: brown;
+    text-shadow: 0 0 1px white;
+  }
+
+  .footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px;
+  }
+
+  .nav ul {
+    list-style: none;
+
+    align-items: center;
+  }
+  .nav ul li {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .nav ul li a:hover {
+    color: brown;
+
+    text-shadow: 0 0 20px white;
+  }
+
+  .main iframe {
+    border-radius: 30px;
+    border: 3px solid brown;
+  }
+  figure img {
+    width: 100%;
+  }
+}
+
+/* ipad size */
+@media (min-width: 768px) and (max-width: 1023px) {
+  @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: grid;
+
+    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-rows: 300px 100px 1fr 500px 1fr;
+    grid-template-areas:
+      ". header header ."
+      ". nav nav ."
+      ". section main ."
+      ". section main ."
+      ". footer footer .";
+    height: 100vh;
+  }
+
+  .header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-image: url("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=768,574");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 30px 0;
+    height: 200px;
+  }
+  .title {
+    color: white;
+    text-shadow: 0 0 10px black;
+
+    font-weight: 700;
+    font-family: "Architects Daughter", cursive;
+  }
+  .nav {
+    grid-area: nav;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    background-color: black;
+  }
+
+  .nav ul {
+    list-style: none;
+    align-items: center;
+  }
+  .nav li {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .nav ul li a:hover {
+    color: brown;
+
+    text-shadow: 0 0 20px white;
+  }
+
+  .main {
+    text-align: center;
+    grid-area: main;
+    border: 2px solid black;
+    border-left: none;
+    background-image: url("https://asset.slimmingworld.co.uk/content/media/13864/ultimate-quick-tomato-sauce_sw_recipe.jpg?v1=JGXiore20qg9NNIj0tmc3TKfKw-jr0s127JqqpCA2x7sMviNgcAYh1epuS_Lqxebn9V_qusKHfwbF7MOUrAPptzBhXIUL1Xnq2Mmdvx4fOk&width=552&height=552");
+  }
+  .section {
+    grid-area: section;
+
+    background-color: black;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cheesy-potato-casserole-comfort-food-recipes-1627578509.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+  }
+  .section p {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+  }
+  .section ul {
+    display: grid;
+    list-style: none;
+    margin-top: 50px;
+  }
+  .section ul li {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+  }
+  .section ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .section ul li a:hover {
+    color: brown;
+    text-shadow: 0 0 1px white;
+  }
+
+  .footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    margin-top: 3px;
+  }
+
+  .main iframe {
+    height: 100%;
+  }
+  figure img {
+    width: 100%;
+  }
+}
+
+/* pc size */
+@media (min-width: 1023px) {
+  @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: grid;
+
+    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-rows: 300px 100px 1fr 500px 1fr;
+    grid-template-areas:
+      ". header header ."
+      ". nav nav ."
+      ". section main ."
+      ". section main ."
+      ". footer footer .";
+    height: 100vh;
+  }
+
+  .header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-image: url("https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=768,574");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 30px 0;
+    height: 200px;
+  }
+  .title {
+    color: white;
+    text-shadow: 0 0 10px black;
+
+    font-weight: 700;
+    font-family: "Architects Daughter", cursive;
+  }
+  .nav {
+    grid-area: nav;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    background-color: black;
+  }
+
+  .nav ul {
+    list-style: none;
+    align-items: center;
+  }
+  .nav li {
+    margin: 0 170px;
+    display: inline-block;
+  }
+
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .nav ul li a:hover {
+    color: brown;
+
+    text-shadow: 0 0 20px white;
+  }
+
+  .main {
+    text-align: center;
+    grid-area: main;
+    border: 2px solid black;
+    border-left: none;
+    background-image: url("https://asset.slimmingworld.co.uk/content/media/13864/ultimate-quick-tomato-sauce_sw_recipe.jpg?v1=JGXiore20qg9NNIj0tmc3TKfKw-jr0s127JqqpCA2x7sMviNgcAYh1epuS_Lqxebn9V_qusKHfwbF7MOUrAPptzBhXIUL1Xnq2Mmdvx4fOk&width=552&height=552");
+  }
+  .section {
+    grid-area: section;
+
+    background-color: black;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cheesy-potato-casserole-comfort-food-recipes-1627578509.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+  }
+  .section p {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+  }
+  .section ul {
+    display: grid;
+    list-style: none;
+    margin-top: 50px;
+  }
+  .section ul li {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+  }
+  .section ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .section ul li a:hover {
+    color: brown;
+    text-shadow: 0 0 1px white;
+  }
+
+  .footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    margin-top: 3px;
+  }
+
+  .main iframe {
+    height: 100%;
+  }
+  figure img {
+    width: 100%;
+  }
+}
